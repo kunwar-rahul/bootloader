@@ -15,14 +15,12 @@ sudo apt-get -y install code # or code-insiders
 
 #install JDK10
 sudo wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz
-sudo tar xf jdk-10.0.1_linux-x64_bin.tar.gz
-sudo echo 'export JAVA_HOME=$HOME/sw/jdk-10.0.1/bin' >> $HOME/.bashrc
-sudo echo 'export PATH=$JAVA_HOME:$PATH' >> $HOME/.bashrc
+sudo tar -C /usr/local --strip-components 1 -xf node-v8.11.1-linux-x64.tar.xz
 sudo rm jdk-10.0.1_linux-x64_bin.tar.gz
 
 #install nodejs
 sudo wget https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz
-sudo tar xf node-v8.11.1-linux-x64.tar.xz
+sudo tar -C /usr/local --strip-components 1 -xf node-v8.11.1-linux-x64.tar.xz
 sudo rm node-v8.11.1-linux-x64.tar.xz
 
 #install vim
