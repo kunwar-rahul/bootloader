@@ -18,8 +18,12 @@ sudo wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-secur
 sudo tar xf jdk-10.0.1_linux-x64_bin.tar.gz
 sudo echo 'export JAVA_HOME=$HOME/sw/jdk-10.0.1/bin' >> $HOME/.bashrc
 sudo echo 'export PATH=$JAVA_HOME:$PATH' >> $HOME/.bashrc
+sudo rm jdk-10.0.1_linux-x64_bin.tar.gz
 
 #install nodejs
 sudo wget https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz
 sudo tar xf node-v8.11.1-linux-x64.tar.xz
+sudo rm node-v8.11.1-linux-x64.tar.xz
 
+#install vim
+sudo apt -y install vim
