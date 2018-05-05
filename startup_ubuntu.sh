@@ -25,3 +25,19 @@ sudo rm node-v8.11.1-linux-x64.tar.xz
 
 #install vim
 sudo apt -y install vim
+
+#install python
+sudo wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+sudo tar xf Python-3.6.5.tgz
+cd Python-3.6.5/
+sudo apt-get install zlib1g-dev
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+sudo ./configure 
+sudo make 
+sudo make install
+sudo rm Python-3.6.5.tgz
+sudo rm -rf Python-3.6.5/
+
+#install virtualenv
+sudo -H python3.6 -m pip install virtualenv
+
